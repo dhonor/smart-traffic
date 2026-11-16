@@ -1,0 +1,13 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'tools/*'
+
+# pnpm 10+ 默认拦截依赖的 postinstall，并把「有被忽略的构建脚本」升级为错误。
+# 这里显式放行必要的几个，同时关闭严格模式（未放行的仅告警，不阻断安装）。
+onlyBuiltDependencies:
+  - '@nestjs/core'
+  - esbuild
+  - msgpackr-extract
+  - '@swc/core'
+strictDepBuilds: false

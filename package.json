@@ -1,0 +1,23 @@
+{
+  "name": "smart-traffic",
+  "private": true,
+  "version": "1.0.0",
+  "description": "智慧交通检测平台 · Cesium+Three 双引擎 / NestJS 模块化单体 / PostGIS+TDengine 分工",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "infra:up": "docker compose up -d postgis redis",
+    "infra:full": "docker compose --profile stream --profile tds --profile obj up -d",
+    "infra:down": "docker compose down",
+    "db:seed": "pnpm --filter @traffic/api seed",
+    "dev:api": "pnpm --filter @traffic/api dev",
+    "dev:web": "pnpm --filter @traffic/web dev",
+    "build": "pnpm -r build",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1",
+    "typescript": "^5.7.3"
+  }
+}
