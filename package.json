@@ -2,6 +2,8 @@
   "name": "smart-traffic",
   "private": true,
   "version": "1.0.0",
+  "license": "MIT",
+  "author": "dhonor and smart-traffic contributors",
   "description": "智慧交通检测平台 · Cesium+Three 双引擎 / NestJS 模块化单体 / PostGIS+TDengine 分工",
   "engines": {
     "node": ">=20"

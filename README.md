@@ -219,3 +219,10 @@ smart-traffic/
 
 - [`docs/01-架构落地对照.md`](docs/01-架构落地对照.md) —— 方案条目 → 代码位置、关键技术细节、本次踩坑
 - [`docs/02-运行与验收.md`](docs/02-运行与验收.md) —— 环境变量、分层启动、验收清单、排障
+
+## 7. 许可证
+
+[MIT](LICENSE) · Copyright (c) 2026 dhonor and smart-traffic contributors
+
+场景中的路网/卡口/轨迹等数据均为可复现的虚构种子数据；Sketchfab 等第三方资产的署名要求
+由使用者自行遵守，本项目代码本身不包含任何第三方 3D 模型二进制文件。
